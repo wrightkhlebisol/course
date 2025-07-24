@@ -41,7 +41,6 @@ pydantic==2.7.1
 numpy==1.26.4
 pandas==2.2.2
 pyarrow==16.0.0
-sqlite3
 aiofiles==23.2.1
 jinja2==3.1.4
 websockets==12.0
