@@ -1,6 +1,12 @@
 import pytest
 import asyncio
-from unittest.mock import Mock, AsyncMock
+from unittest.mock import AsyncMock, Mock, patch
+import sys
+import os
+
+# Add backend/src to path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..', 'backend', 'src'))
+
 from services.log_streamer import LogStreamer
 from models.log_entry import LogEntry
 from datetime import datetime

@@ -3,7 +3,7 @@ import json
 import random
 from datetime import datetime, timezone
 from typing import AsyncGenerator, List
-from ..models.log_entry import LogEntry, LogLevel
+from models.log_entry import LogEntry, LogLevel
 import structlog
 
 logger = structlog.get_logger()

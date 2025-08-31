@@ -8,9 +8,9 @@ from fastapi import FastAPI, WebSocket, WebSocketDisconnect, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 import uvicorn
-from .services.log_streamer import LogStreamer
-from .services.connection_manager import ConnectionManager
-from .models.log_entry import LogEntry
+from services.log_streamer import LogStreamer
+from services.connection_manager import ConnectionManager
+from models.log_entry import LogEntry
 import structlog
 
 # Configure structured logging

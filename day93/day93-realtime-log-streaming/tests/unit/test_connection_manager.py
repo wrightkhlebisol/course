@@ -1,5 +1,11 @@
 import pytest
-from unittest.mock import Mock, AsyncMock
+from unittest.mock import AsyncMock, Mock
+import sys
+import os
+
+# Add backend/src to path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..', 'backend', 'src'))
+
 from services.connection_manager import ConnectionManager
 
 @pytest.fixture

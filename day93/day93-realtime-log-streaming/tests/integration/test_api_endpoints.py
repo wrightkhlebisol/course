@@ -1,7 +1,13 @@
 import pytest
 import httpx
 import asyncio
+import sys
+import os
 from fastapi.testclient import TestClient
+
+# Add backend/src to path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..', 'backend', 'src'))
+
 from main import app
 
 @pytest.fixture

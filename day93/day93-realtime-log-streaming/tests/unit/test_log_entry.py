@@ -1,5 +1,11 @@
 import pytest
+import sys
+import os
 from datetime import datetime
+
+# Add backend/src to path
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..', '..', 'backend', 'src'))
+
 from models.log_entry import LogEntry
 
 def test_log_entry_creation():
