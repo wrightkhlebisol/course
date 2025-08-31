@@ -15,7 +15,7 @@ source venv/bin/activate
 export PYTHONPATH="$(pwd)/src:$PYTHONPATH"
 
 echo "📊 Running tests..."
-python3.11 -m pytest tests/ -v
+python -m pytest tests/ -v
 
 if [ $? -eq 0 ]; then
     echo "✅ All tests passed!"
